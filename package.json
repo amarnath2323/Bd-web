@@ -1,0 +1,13 @@
+{
+  "name": "amma-birthday-surprise",
+  "version": "1.0.0",
+  "description": "A heartfelt animated birthday surprise website for Amma",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
