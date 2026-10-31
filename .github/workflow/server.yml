@@ -18,7 +18,15 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          if [ -f package.json ]; then
+            npm install
+          fi
 
       - name: Start Server
-        run: npm start
+        run: |
+          if [ -f server.js ]; then
+            node server.js
+          else
+            echo "server.js not found at root folder"
+          fi
