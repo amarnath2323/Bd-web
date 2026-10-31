@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24120f">
+  <meta name="description" content="A birthday surprise made with love for Amma.">
+  <title>For Amma, With All My Love ♥</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="petals" aria-hidden="true"></div>
+  <audio id="music" src="assets/birthday-song.mp3" loop preload="auto" playsinline></audio>
+
+  <main>
+    <section class="intro-screen" id="intro">
+      <div class="intro-stars">✦　·　✧　·　✦</div>
+      <div class="envelope-wrap">
+        <div class="envelope-glow"></div>
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter">
+            <span class="letter-small">A little something</span>
+            <span class="letter-script">for Amma</span>
+            <span class="letter-heart">♥</span>
+          </div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">♥</div>
+        </div>
+      </div>
+      <p class="eyebrow intro-eyebrow">MADE WITH ALL MY LOVE</p>
+      <h1 class="intro-title">Someone very special<br>was born today<span>.</span></h1>
+      <p class="intro-subtitle">And this little world is just for her.</p>
+      <button class="gold-button" id="openSurprise">Open your surprise <span>♥</span></button>
+      <p class="tiny-note">A little gift from your child, with a lifetime of love.</p>
+    </section>
+
+    <section class="hero hidden" id="hero">
+      <nav class="top-nav">
+        <a href="#hero" class="brand">for <span>Amma</span> ♡</a>
+        <button class="music-toggle" id="musicToggle" aria-label="Toggle music">♫ <span>Birthday song</span></button>
+      </nav>
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> THE MOST SPECIAL PERSON IN MY WORLD</p>
+          <h2>Happy Birthday,<br><span class="script gold-text">Amma</span><span class="heart-mark">♥</span></h2>
+          <p class="hero-sub">My first love. My forever supporter.<br>My home, in every season of life.</p>
+          <div class="hero-rule"><span>✦</span></div>
+          <p class="hero-note">Today is all about celebrating the beautiful soul who has given me more love than words could ever hold.</p>
+          <a href="#letter" class="text-link">There's something I want to tell you <span>↓</span></a>
+        </div>
+        <div class="hero-photo-wrap reveal">
+          <div class="photo-orbit orbit-one"></div><div class="photo-orbit orbit-two"></div>
+          <div class="photo-frame">
+            <img src="assets/family-photo.png" alt="A special family portrait" class="family-photo">
+            <div class="photo-caption"><span>my world</span><b>my Amma ♥</b></div>
+          </div>
+          <div class="floating-stamp">YOU ARE<br><strong>LOVED</strong><span>∞</span></div>
+          <span class="sparkle sparkle-a">✦</span><span class="sparkle sparkle-b">✧</span><span class="sparkle sparkle-c">✦</span>
+        </div>
+      </div>
+      <div class="scroll-cue"><span></span> SCROLL TO FEEL THE LOVE</div>
+    </section>
+
+
+    <section class="photo-story section-pad" id="our-memories">
+      <div class="section-heading reveal">
+        <p class="eyebrow">LITTLE MOMENTS, FOREVER TREASURED</p>
+        <h2>Our story, wrapped in<br><span class="script">a lifetime of love.</span></h2>
+        <p class="gallery-intro">Every photograph holds a little piece of our journey. Today, they are all here to celebrate you, Amma.</p>
+      </div>
+      <div class="memory-gallery">
+        <figure class="gallery-card gallery-feature reveal">
+          <img src="assets/birthday-tribute-poster.png" alt="A birthday tribute poster made for Amma" loading="lazy">
+          <figcaption><span>01</span><div><strong>A birthday, just for you</strong><small>Our queen, our heart, our Amma</small></div></figcaption>
+        </figure>
+        <figure class="gallery-card reveal">
+          <img src="assets/memory-childhood-cake.png" alt="A childhood birthday memory with Amma" loading="lazy">
+          <figcaption><span>02</span><div><strong>Where my story began</strong><small>Your hand was there from the very start</small></div></figcaption>
+        </figure>
+        <figure class="gallery-card reveal">
+          <img src="assets/memory-family-cake.png" alt="A family birthday memory" loading="lazy">
+          <figcaption><span>03</span><div><strong>Our little family</strong><small>The moments I will always keep close</small></div></figcaption>
+        </figure>
+        <figure class="gallery-card reveal">
+          <img src="assets/memory-amma-and-sister.png" alt="Amma and her daughter together" loading="lazy">
+          <figcaption><span>04</span><div><strong>Your love, in every chapter</strong><small>Beautiful then, beautiful always</small></div></figcaption>
+        </figure>
+      </div>
+      <p class="gallery-footnote reveal">If I could collect every happy moment with you, I would fill a sky with stars. ♥</p>
+    </section>
+
+    <section class="quote-section section-pad" id="quotes">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A FEW WORDS FROM MY HEART</p>
+        <h2>Things I hope you<br><span class="script">always remember</span></h2>
+      </div>
+      <div class="quote-grid" id="quoteGrid">
+        <article class="quote-card reveal"><span class="quote-number">01 / LOVE</span><span class="big-quote">“</span><p>Before the world knew me, you loved me.</p><span class="quote-heart">♡</span></article>
+        <article class="quote-card quote-card-feature reveal"><span class="quote-number">02 / HOME</span><span class="big-quote">“</span><p>No matter how old I grow, I will always be your little child.</p><span class="quote-heart">♡</span></article>
+        <article class="quote-card reveal"><span class="quote-number">03 / BLESSING</span><span class="big-quote">“</span><p>Your love is my greatest blessing. Your happiness is my biggest wish.</p><span class="quote-heart">♡</span></article>
+      </div>
+    </section>
+
+    <section class="memory-section section-pad">
+      <div class="memory-inner">
+        <div class="memory-heading reveal">
+          <p class="eyebrow">OUR LITTLE UNIVERSE</p>
+          <h2>My favourite part<br>of life is <span class="script">having you.</span></h2>
+          <p>Some feelings are too big for one birthday wish. So here's a little collection of things I want you to know.</p>
+        </div>
+        <div class="memory-list" id="memoryList">
+          <article class="memory-item reveal"><span class="memory-icon">✿</span><div><h3>My First Home</h3><p>Your arms were my first safe place. Your love will always feel like home.</p></div><span class="memory-index">01</span></article>
+          <article class="memory-item reveal"><span class="memory-icon">✧</span><div><h3>My Biggest Supporter</h3><p>Every dream feels possible because you believe in me.</p></div><span class="memory-index">02</span></article>
+          <article class="memory-item reveal"><span class="memory-icon">♡</span><div><h3>Forever Your Child</h3><p>Growing up will never change the place you hold in my heart.</p></div><span class="memory-index">03</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter-section section-pad" id="letter">
+      <div class="letter-card reveal">
+        <div class="letter-top"><span>♥</span><span>A LETTER FOR AMMA</span><span>♥</span></div>
+        <p class="letter-date">ON YOUR SPECIAL DAY</p>
+        <h2>Dear <span class="script">Amma,</span></h2>
+        <div class="letter-body">
+          <p>Before the world knew me, you loved me. Before I knew how to speak, you understood my cries. And before I knew what strength meant, I saw it in you.</p>
+          <p>I know I may not always say thank you for every sacrifice, every worry, every little thing you do for me. But please know that I notice more than I can explain, and I carry your love with me wherever I go.</p>
+          <p>No gift could ever equal what you have given me. I can only hope that the life I build, the person I become, and the happiness I bring you will make you proud.</p>
+          <p>Whatever happens in this world, you will never have to wonder whether you are loved. You are loved beyond words, beyond distance, beyond time.</p>
+        </div>
+        <p class="letter-signoff">Forever your little child,</p>
+        <p class="signature script" id="signature">With all my love ♥</p>
+        <div class="letter-flower">❀</div>
+      </div>
+    </section>
+
+    <section class="wish-section section-pad">
+      <div class="wish-glow"></div>
+      <p class="eyebrow reveal">MAKE A WISH, AMMA</p>
+      <h2 class="reveal">May your days be as beautiful<br>as the love <span class="script">you give.</span></h2>
+      <div class="cake-wrap reveal" id="cakeWrap">
+        <div class="cake-candle"><div class="flame" id="flame"></div></div>
+        <div class="cake cake-top"></div><div class="cake cake-middle"></div><div class="cake cake-bottom"></div>
+        <div class="cake-plate"></div>
+        <div class="cake-decoration">♥　✦　♥　✦　♥</div>
+      </div>
+      <p class="wish-instruction">Tap the candle to make a wish ✨</p>
+      <button class="gold-button wish-button" id="wishButton">Make a wish with me ♥</button>
+      <p class="wish-result" id="wishResult" aria-live="polite"></p>
+    </section>
+
+    <section class="finale section-pad" id="finale">
+      <div class="finale-frame reveal">
+        <div class="finale-corner corner-one">❧</div><div class="finale-corner corner-two">❧</div>
+        <p class="eyebrow">TODAY, TOMORROW, ALWAYS</p>
+        <h2>Happy Birthday<br><span class="script gold-text">Amma</span> <span class="red-heart">♥</span></h2>
+        <p class="finale-message">You are the prayer I will always be grateful for,<br>the strength behind me, and the love I carry forever.</p>
+        <div class="finale-divider">✦　♡　✦</div>
+        <p class="finale-love">I LOVE YOU, AMMA.</p>
+        <p class="finale-small">More than these words can ever say.</p>
+        <button class="outline-button" id="celebrateAgain">Celebrate again ✨</button>
+      </div>
+      <footer>MADE WITH A MILLION LITTLE PIECES OF LOVE <span>♥</span></footer>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>

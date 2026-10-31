@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Birthday Website Editor</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{background:#fff7e9;min-height:100vh}.admin-wrap{max-width:850px;margin:0 auto;padding:32px 20px 70px}
+    .admin-head{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid #e4cda8;padding-bottom:20px}
+    .admin-head h1{font:2.5rem "Cormorant Garamond",Georgia,serif;margin:0}.admin-head a{color:#8d5c37}
+    .admin-panel{background:#fffaf2;border:1px solid #e8d3b2;padding:24px;margin-top:24px;box-shadow:0 15px 40px #6b3d1b0b}
+    label{display:block;font-size:.75rem;letter-spacing:.06em;color:#76513d;margin:15px 0 7px}
+    input,textarea{width:100%;padding:12px;border:1px solid #dec5a3;background:#fffdf8;color:#351a17;font:inherit;border-radius:3px}
+    textarea{min-height:85px;resize:vertical}.admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+    .status{font-size:.9rem;color:#795a40;min-height:24px;margin-top:12px}.memory-editor{border-top:1px solid #ead8be;padding-top:10px;margin-top:18px}
+    .memory-editor h3{font:1.3rem "Cormorant Garamond",Georgia,serif}.admin-intro{color:#765d4d;line-height:1.7}
+    @media(max-width:550px){.admin-head{align-items:flex-start;flex-direction:column}.admin-panel{padding:18px}}
+  </style>
+</head>
+<body>
+  <div class="admin-wrap">
+    <header class="admin-head"><div><p class="eyebrow">A LITTLE LOVE, EDITED BY YOU</p><h1>Birthday Website Editor</h1></div><a href="/">← View the surprise</a></header>
+    <p class="admin-intro">Personalize the quotes and memories before sharing the website. The editor uses the local project API. If you deploy publicly, configure <code>ADMIN_TOKEN</code> on the server and enter it below.</p>
+    <section class="admin-panel">
+      <label for="token">Admin token (only required if configured on the server)</label><input id="token" type="password" placeholder="Leave blank for local development">
+      <label for="recipient">Recipient</label><input id="recipient" value="Amma">
+      <label for="sender">Signature / sender</label><input id="sender" value="Your loving child">
+      <label for="birthdayMessage">Birthday heading</label><input id="birthdayMessage" value="Happy Birthday, Amma!">
+      <label for="quotes">Quotes (one per line)</label><textarea id="quotes"></textarea>
+      <div class="memory-editor"><h3>Memory cards</h3><div id="memories"></div></div>
+      <div class="admin-actions"><button class="gold-button" id="load">Load saved content</button><button class="gold-button" id="save">Save changes</button></div>
+      <p class="status" id="status" role="status"></p>
+    </section>
+    <section class="admin-panel"><h2 style="font:2rem 'Cormorant Garamond',Georgia,serif">Guest messages</h2><p class="admin-intro">Messages saved through <code>POST /api/message</code> appear here. Keep this page private if you use it on a public server.</p><button class="gold-button" id="messagesBtn">Load messages</button><div id="messages" class="status"></div></section>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
